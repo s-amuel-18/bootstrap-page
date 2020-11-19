@@ -1,0 +1,25 @@
+extends ../includes/layout.pug
+include ../includes/components/footer.pug
+include ../includes/components/navegacion.pug
+include ../includes/components/header.pug
+include ../includes/components/oradores.pug
+include ../includes/components/moreInformation.pug
+include ../includes/components/form.pug
+include ../includes/components/modals.pug 
+
+block metatags
+  -var title = 'Feliz Desarrollo Web basado en Componentes'
+  -var description = 'Boilerplate para el desarrollo de proyectos Frontend basado en Componentes de @jonmircha'
+  title= title
+  meta(name="description", content=description)
+  meta(name="application-name", content=title)
+block content
+  header
+    +navegacion([[`#inicio`,`Inicio`],[`#preparadores`,`Preparadores`],[`#lugar`,`Lugar y Fecha`],[`#Comviertete`,`Comviertete en Preparador`]])
+    +headerPoster([`./img/header-1.jpg`,`./img/header-2.jpg`,`./img/header-3.jpg`,`./img/header-4.jpg`],`Lorem, ipsum dolor.`,`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maiores laboriosam, doloremque quasi doloribus velit nihil optio rerum possimus facere consequuntur! Minus dolores modi odio! Voluptatibus explicabo ullam quia`) 
+  main
+    +oradores(`preparadores`,`conoce a los`,[`./img/orador-1.jpg`,`./img/orador-2.jpg`,`./img/orador-3.jpg`,`./img/orador-4.jpg`,`./img/orador-5.jpg`,`./img/orador-6.jpg`])
+    +moreInformation(`./img/moreInformation-img.jpg`) 
+    +form()
+  +footer([[`#inicio`,`Inicio`],[`#preparadores`,`Preparadores`],[`#lugar`,`Lugar y Fecha`],[`#Comviertete`,`Comviertete en Preparador`]]) 
+  +modals()  

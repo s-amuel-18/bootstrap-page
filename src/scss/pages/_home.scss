@@ -1,0 +1,100 @@
+#footer {
+  // background-image:li$bg-principal;
+  background-image: linear-gradient(120deg, $bg-principal 0%, lighten($color:$bg-principal, $amount: 20) 100%);
+  a {
+    color: $bg-blanco;
+    // background-color: ;
+  }
+}
+.menu {
+  background-color:  $bg-principal;
+  z-index: 900;
+}
+
+.header-img {
+  object-fit: cover;
+  min-height: 520px;
+  height: 70vh;
+  @media screen and (max-width:765px){
+    min-height: 70vh;
+
+  } 
+}
+#carousel {
+  position: relative;
+}
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  z-index: 1;
+  color: #fff;
+}
+
+.header-container,
+.header-row1 {
+  height: 100%;
+}
+
+.btn-principal {
+  background-color: $bg-fucsia;
+  color: #fff;
+  &:hover {
+    background-color: darken($color: $bg-fucsia, $amount: 20);
+    color: #fff !important;
+  }
+}
+.bg-principal {
+  background-color: $bg-fucsia;
+}
+.bg-blanco {
+  background-color: $bg-blanco;
+}
+.text-blanco {
+  color: $bg-blanco !important;
+}
+.bg-secundario {
+  background-color: $bg-morado;
+}
+.bg-secundario-degra {
+  background-image:  linear-gradient(120deg,$bg-morado,darken($color: $bg-morado, $amount: 20));
+}
+
+.oradores {
+  &-card {
+  max-width: 350px;
+  
+  }
+  
+  &-img {
+    height: 380px;
+    object-fit: cover;
+    object-position: top center;
+  }
+ 
+}
+
+.moreInformation {
+  // height: fit-content;
+  // overflow: hidden;
+  width: 100%;
+  &-contentimg,&-description {
+    width: 100%;
+
+  }
+  &-img {
+    object-fit: cover;
+    max-height: 350px; 
+    @media screen and (min-width:992px){
+      max-height: 100%; 
+
+    }
+    // height: 100%;
+    // width: 200px;
+  }
+} 
+
+

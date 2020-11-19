@@ -1,0 +1,26 @@
+mixin form()
+  .form-contact.my-5#Comviertete
+    .container
+      .row
+        .col.text-uppercase.text-center
+          small conviertete en un
+          h2 preparador
+      .row
+        .col.text-center
+          p.mx-auto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio dolorem enim fugit eius architecto pariatur recusandae atque laborum alias nihil voluptatum quas ducimus aspernatur, placeat nulla ab esse laboriosam mollitia.
+      .row
+        .col-md-10.offset-md-1.col-lg-8.offset-lg-2.my-3
+          form
+            .form-row
+              div.col-md-6.col-12.form-group
+                input(type="text",placeholder="Nombre").form-control
+              div.col-md-6.col-12.form-group
+                input(type="text",placeholder="Apellido").form-control
+            .form-row
+              .col.form-group
+                textarea(name="text", cols="30", rows="5",placeholder="¿Sobre que quieres hablar?").form-control.form-control-lg
+                small.form-text.text-muted Recuerda colocar un titulo a tu charla
+            .form-row
+              .col
+                input(type="submit", value="Enviar").btn.bg-principal.text-white.btn-block
+

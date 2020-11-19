@@ -1,0 +1,18 @@
+mixin oradores(title,smTitle,imgs)
+  .oradores.my-5#preparadores
+    .container
+      .row.my-4
+        .col.text-center.text-uppercase
+          small= smTitle
+          h2= title 
+      .row
+        each img in imgs 
+          .col-lg-4.col-md-6.p-3
+            .card.shadow.rounded.rounded-lg.border-0.oradores-card.mx-auto
+              img.card-img-top.oradores-img(src=img alt='...')
+              .card-body
+                h5.card-title Card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                a.btn.btn-principal(href='#') Go somewhere 
+

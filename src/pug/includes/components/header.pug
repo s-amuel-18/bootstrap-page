@@ -1,0 +1,20 @@
+mixin headerPoster(imgs,titleHeader,description)
+  #inicio.header-poster.carousel.slide.carousel-fade(data-ride='carousel', data-pause=`false`)
+    .carousel-inner
+      each img,index in imgs
+        if index == 0
+          .carousel-item.active
+            img.d-block.w-100.header-img(src=img, alt='...')
+        else
+          .carousel-item
+            img.d-block.w-100.header-img(src=img, alt='...')
+    .header-overlay
+      .container.header-container
+        .row.align-items-center.header-row1
+          .col-md-6.offset-md-6.text-md-right.text-center
+            h1.display-4.mb-5= titleHeader
+            p.d-none.d-md-block= description 
+            a(href="").btn.btn-outline-light quiero formar parte
+            button(type="button",data-toggle="modal", data-target="#modalCompra").btn.btn-principal Comprar tikets
+
+  

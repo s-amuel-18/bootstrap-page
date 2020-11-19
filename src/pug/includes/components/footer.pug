@@ -1,0 +1,7 @@
+mixin footer(links)
+  footer#footer.py-4
+    .container
+      .row
+        each link in links
+          .col-12.col-lg.py-1
+            a(href=link[0])=link[1]

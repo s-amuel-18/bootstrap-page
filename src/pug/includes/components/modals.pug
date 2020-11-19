@@ -1,0 +1,20 @@
+mixin modals()
+  div.modal.fade#modalCompra(tabindex="-1", aria-labelledby="exampleModalLabel", aria-hidden="true")
+    div.modal-dialog
+      div.modal-content
+        div.modal-header
+          h5.modal-title#exampleModalLabel Modal title
+          button(type="button", class="close", data-dismiss="modal", aria-label="Close")
+            span(aria-hidden="true") &times;
+        div.modal-body
+          form(action="")
+            .form-row
+              .from-group.col
+                .input-group.mb-3
+                  .input-group-prepend
+                    .input-group-text#basic-addon1 @
+                  input( type="text", class="form-control", placeholder="Username", aria-label="Username", aria-describedby="basic-addon1")
+            small.alert.alert-warning.text-form(role="alert") Resiviras un correo si Ganas!!
+        div.modal-footer
+          button( type="button", data-dismiss="modal").btn.bg-blanco.text-muted Cancelar
+          button(type="button").btn.btn-principal Comprar

@@ -1,0 +1,15 @@
+{
+  "ignore": [
+  	".fa-youtube-play",
+  	".Youtube",
+  	".Youtube-wrapper",
+  	".Youtube iframe",
+  	".Youtube a",
+		".App a",
+		".nav-link.active",
+		".carousel-item.active",
+		".modal.fade.show"
+  ],
+  "ignoreSheets": []
+}
+      

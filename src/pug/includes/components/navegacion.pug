@@ -1,0 +1,13 @@
+mixin navegacion(links)
+  .menu.fixed-top
+    nav.container.navbar.navbar-expand-lg.navbar-dark
+      a.navbar-brand(href="#") Navbar
+      button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      div.collapse.navbar-collapse#navbarSupportedContent
+        ul.navbar-nav.ml-auto
+          each link,index in links
+            li.nav-item
+              a(href=link[0]).nav-link= link[1]
+          li.nav-item
+            a(href=`#`, data-toggle="modal", data-target="#modalCompra").nav-link.text-blanco Comprar Tiket
